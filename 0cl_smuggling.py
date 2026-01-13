@@ -13,25 +13,25 @@ import random
 
 CONFIG = {
     # Target configuration
-    'target_host': 'example.com',  # NO trailing slash!
+    'target_host': '0a71008504f6a9958232ce1a00f700f7.web-security-academy.net',  # NO trailing slash!
     'target_port': 443,
     'use_https': True,
 
     # Webhook for XSS callback (Burp Collaborator, webhook.site, interact.sh)
-    'webhook_url': 'https://webhook.site/53f44ca3-bcb2-4d66-bb8f-58c0da9d71ed',
+    'webhook_url': 'https://webhook.site/4a1f15ba-c06a-4162-8bf8-4d3e7d9ac877',
 
     # Attack method selection
     'attack_method': 'both',  # Options: 'head', 'user-agent', 'both'
 
     # Attack vectors
-    'gadget_path': '/resources/css/labsBlog.css',  # Early-response gadget
-    'gadget_method': 'POST',
+    'gadget_path': '/resources/labheader/js/labHeader.js',  # Early-response gadget
+    'gadget_method': 'GET',
 
     # HEAD technique configuration (James Kettle's preferred method)
     'head_static_resources': [
         '/resources/js/labheader.js',
         '/resources/css/labsBlog.css',
-        '/resources/js/analytics.js',
+        '/post/comment/confirmation?postId=6',
         '/static/app.js',
         '/static/main.css',
         '/js/main.js',
